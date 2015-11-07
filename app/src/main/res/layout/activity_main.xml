@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/background_dark">
+
+    <com.example.test.customvoiceview.VoiceLayout
+        android:id="@+id/voice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></com.example.test.customvoiceview.VoiceLayout>
+
+    <Button
+        android:id="@+id/session_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/voice_layout"
+        android:text="会话"/>
+    <Button
+        android:id="@+id/monitor_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/voice_layout"
+        android:layout_toRightOf="@id/session_bt"
+        android:text="监听"/>
+
+
+</RelativeLayout>
